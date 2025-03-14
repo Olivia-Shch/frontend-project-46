@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20.x]
 
     steps:
       - uses: actions/checkout@v3
@@ -25,9 +25,12 @@ jobs:
           cache: 'npm'
       - run: make install
       - run: make lint
-      - name: Test & publish code coverage
+      - name: Run tests
+        run: npm test -- --config=jest.config.js --coverage --coverageProvider=v8 
+      - name: Upload coverage to CodeClimate
         uses: paambaati/codeclimate-action@v3.0.0
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
           coverageCommand: make test-coverage
+          coverageLocations: ${{ github.workspace }}/coverage/lcov.info:lcov
