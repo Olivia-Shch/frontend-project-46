@@ -1,6 +1,11 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Olivia-Shch/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Olivia-Shch/frontend-project-46/actions)
 
+<a href="https://codeclimate.com/github/Olivia-Shch/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/a384ba4e6ac291625036/maintainability" /></a>
+
+<a href="https://codeclimate.com/github/Olivia-Shch/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a384ba4e6ac291625036/test_coverage" /></a>
+
+
 Минимальные требования: версия node.js не ниже 20.18.3
 
 Проект "Вычислитель отличий"
