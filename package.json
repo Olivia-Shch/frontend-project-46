@@ -4,9 +4,6 @@
   "description": "Gendiff - is the second study poject (Hexlet)",
   "main": "src/index.js",
   "type": "module",
-  "jest": {
-    "transform": {}
-  },
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
