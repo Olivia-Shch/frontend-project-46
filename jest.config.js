@@ -1,15 +1,11 @@
 export default {
   transform: {
-    "^.+\\.ts$": "ts-jest",   // Обработка TypeScript файлов
-    "^.+\\.js$": "babel-jest"  // Обработка JavaScript файлов
+    "^.+\\.js$": "babel-jest"
   },
   testEnvironment: "node",
   globals: {
     "ts-jest": {
-      useESM: true  // Поддержка ESM для TypeScript
+      useESM: true
     }
-  },
-  coverageProvider: "v8",  // Включение V8 для покрытия
-  coverage: true,         // Включение покрытия тестами
+  }
 };
-
