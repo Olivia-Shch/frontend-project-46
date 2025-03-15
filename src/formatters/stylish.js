@@ -41,7 +41,3 @@ const makeTree = (comparedData, depth = 1) => {
 const makeStylishReportDiff = (comparedData) => makeTree(comparedData);
 
 export default makeStylishReportDiff;
-
-console.log(`addMargin(${depth}): ${baseIndent}`);
-console.log(`makeString(${item}, ${depth}): ${result}`);
-
