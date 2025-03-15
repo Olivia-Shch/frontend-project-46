@@ -1,14 +1,15 @@
 export default {
   transform: {
-    "^.+\\.js$": "babel-jest",
-    "^.+\\.tsx?$": "ts-jest"
+    "^.+\\.ts$": "ts-jest",   // Обработка TypeScript файлов
+    "^.+\\.js$": "babel-jest"  // Обработка JavaScript файлов
   },
   testEnvironment: "node",
   globals: {
     "ts-jest": {
-      useESM: true
+      useESM: true  // Поддержка ESM для TypeScript
     }
   },
-  setupFiles: ["./jest.setup.js"], // Если нужно
-  verbose: true, // Для более детализированных логов
+  coverageProvider: "v8",  // Включение V8 для покрытия
+  coverage: true,         // Включение покрытия тестами
 };
+
