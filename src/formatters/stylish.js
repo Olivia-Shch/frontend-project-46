@@ -38,6 +38,10 @@ const makeTree = (comparedData, depth = 1) => {
   return data.join('\n');
 };
 
-const makeStylishReportDiff = (comparedData) => `{\n${makeTree(comparedData)}\n}`;
+const makeStylishReportDiff = (comparedData) => {
+  console.log(JSON.stringify(comparedData, null, 2)); // Проверка структуры
+  return `{\n${makeTree(comparedData)}\n}`;
+};
+
 
 export default makeStylishReportDiff;
