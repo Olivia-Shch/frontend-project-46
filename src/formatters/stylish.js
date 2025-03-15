@@ -1,24 +1,27 @@
 import _ from 'lodash';
 
 const addMargin = (depth, isSignMargin = false) => {
-  const spacesCount = depth * 4;
-  return isSignMargin ? ' '.repeat(spacesCount - 2) : ' '.repeat(spacesCount);
+  const baseIndent = ' '.repeat(depth * 4);
+  return isSignMargin ? baseIndent.slice(2) : baseIndent;
 };
 
 const makeString = (item, depth) => {
   if (!_.isObject(item) || item === null) {
     return String(item);
   }
-  const entries = Object.entries(item)
+
+  const string = Object.entries(item)
     .map(([key, value]) => `${addMargin(depth + 1)}${key}: ${makeString(value, depth + 1)}`);
-  return `{\n${entries.join('\n')}\n${addMargin(depth)}}`;
+  return `{\n${string.join('\n')}\n${addMargin(depth)}}`;
 };
 
 const makeTree = (comparedData, depth = 1) => {
   const data = comparedData.map((item) => {
     switch (item.type) {
       case 'nested':
-        return `${addMargin(depth)}${item.key}: {\n${makeTree(item.children, depth + 1)}\n${addMargin(depth)}}`;
+        // Дебаг: выводим вложенные данные, чтобы увидеть их структуру
+        console.log(`Nested data for key: ${item.key}`, item.children);
+        return `${addMargin(depth)}${item.key}: ${makeTree(item.children, depth + 1)}`;
       case 'deleted':
         return `${addMargin(depth, true)}- ${item.key}: ${makeString(item.value1, depth)}`;
       case 'added':
@@ -35,13 +38,9 @@ const makeTree = (comparedData, depth = 1) => {
     }
   });
 
-  return data.join('\n');
+  return `{\n${data.join('\n')}\n${addMargin(depth - 1)}}`;
 };
 
-const makeStylishReportDiff = (comparedData) => {
-  console.log(JSON.stringify(comparedData, null, 2)); // Проверка структуры
-  return `{\n${makeTree(comparedData)}\n}`;
-};
-
+const makeStylishReportDiff = (comparedData) => makeTree(comparedData);
 
 export default makeStylishReportDiff;
