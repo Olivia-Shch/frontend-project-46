@@ -12,6 +12,16 @@
 
 Gendiff — это программа, которая позволяет сравнивать два файла. Программа поддерживает сравнение файлов с расширениями json, yml, yaml. Результаты сравнения могут быть выведены в трёх форматах: stylish, plain, json.
 
+https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el
+
 
 Сравнение файлов .json:
 https://asciinema.org/a/zdQUXDSxHeqY2zWKMYkbxhx7U
+
+
+Форматтер 'plain' для файлов .json:
+https://asciinema.org/a/1WvAVjiskL22J2bJTEKUudcpN
+
+
+Вывод в json:
+https://asciinema.org/a/dEDZyALdSgdCR5szqSI4GhX2a
