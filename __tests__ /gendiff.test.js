@@ -20,9 +20,9 @@ describe('gendiff', () => {
   test.each(fileTypes)('should be work with %s', (fileType) => {
     const file1 = getFixturePath(`file1.${fileType}`);
     const file2 = getFixturePath(`file2.${fileType}`);
-    expect(genDiff(file1, file2, 'stylish')).toBe(expectedStylish);
-    expect(genDiff(file1, file2, 'plain')).toBe(expectedPlain);
-    expect(genDiff(file1, file2, 'json')).toBe(expectedJson);
-    expect(genDiff(file1, file2)).toBe(expectedStylish);
+    expect(genDiff(file1, file2, 'stylish')).toEqual(expectedStylish);
+    expect(genDiff(file1, file2, 'plain')).toEqual(expectedPlain);
+    expect(genDiff(file1, file2, 'json')).toEqual(expectedJson);
+    expect(genDiff(file1, file2)).toEqual(expectedStylish);
   });
 });
