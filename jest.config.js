@@ -1,11 +1,11 @@
 export default {
   transform: {
-    "^.+\\.js$": "babel-jest"
+    '^.+\\.js$': 'babel-jest',
   },
-  testEnvironment: "node",
+  testEnvironment: 'node',
   globals: {
-    "ts-jest": {
-      useESM: true
-    }
-  }
+    'ts-jest': {
+      useESM: true,
+    },
+  },
 };
