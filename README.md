@@ -12,19 +12,16 @@
 
 Gendiff — это программа, которая позволяет сравнивать два файла. Программа поддерживает сравнение файлов с расширениями json, yml, yaml. Результаты сравнения могут быть выведены в трёх форматах: stylish, plain, json.
 
-https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el
-
 <a href="https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el" target="_blank"><img src="https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el.svg" /></a>
 
-[![asciicast](https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el.svg)](https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el)
 
 Сравнение файлов .json:
-https://asciinema.org/a/zdQUXDSxHeqY2zWKMYkbxhx7U
+<a href="https://asciinema.org/a/zdQUXDSxHeqY2zWKMYkbxhx7U" target="_blank"><img src="https://asciinema.org/a/zdQUXDSxHeqY2zWKMYkbxhx7U.svg" /></a>
 
 
 Форматтер 'plain' для файлов .json:
-https://asciinema.org/a/1WvAVjiskL22J2bJTEKUudcpN
+<a href="https://asciinema.org/a/1WvAVjiskL22J2bJTEKUudcpN" target="_blank"><img src="https://asciinema.org/a/1WvAVjiskL22J2bJTEKUudcpN.svg" /></a>
 
 
 Вывод в json:
-https://asciinema.org/a/dEDZyALdSgdCR5szqSI4GhX2a
+<a href="https://asciinema.org/a/dEDZyALdSgdCR5szqSI4GhX2a" target="_blank"><img src="https://asciinema.org/a/dEDZyALdSgdCR5szqSI4GhX2a.svg" /></a>
