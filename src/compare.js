@@ -4,14 +4,16 @@ const compareData = (data1, data2) => {
   const sortedKeys = _.sortBy(_.union(Object.keys(data1), Object.keys(data2)));
 
   return sortedKeys.map((key) => {
-    const value1 = data1[key];
-    const value2 = data2[key];
+    const hasKey1 = Object.hasOwn(data1, key);
+    const hasKey2 = Object.hasOwn(data2, key);
+    const value1 = hasKey1 ? data1[key] : null;
+    const value2 = hasKey2 ? data2[key] : null;
 
-    if (!Object.hasOwn(data1, key)) {
+    if (!hasKey1) {
       return { key, type: 'added', value: value2 };
     }
 
-    if (!Object.hasOwn(data2, key)) {
+    if (!hasKey2) {
       return { key, type: 'deleted', value: value1 };
     }
 
