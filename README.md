@@ -16,6 +16,8 @@ https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el
 
 <a href="https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el" target="_blank"><img src="https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el.svg" /></a>
 
+[![asciicast](https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el.svg)](https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el)
+
 Сравнение файлов .json:
 https://asciinema.org/a/zdQUXDSxHeqY2zWKMYkbxhx7U
 
