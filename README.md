@@ -14,6 +14,8 @@ Gendiff — это программа, которая позволяет сра�
 
 https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el
 
+<script async id="asciicast-1" src="https://asciinema.org/a/Bd0OFGEC91wuSiVO9VS4LS4el"></script>
+
 
 Сравнение файлов .json:
 https://asciinema.org/a/zdQUXDSxHeqY2zWKMYkbxhx7U
